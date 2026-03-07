@@ -1,0 +1,29 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#index-body {
+    background-image: url("../assets/stardew-valley-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: url("../assets/stardew-cursor.cur"), auto;
+}
+#index-main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+#index-img {
+    width: 80%;
+    height: auto;
+}
+#index-play-btn {
+    margin-top: 20px;
+}
