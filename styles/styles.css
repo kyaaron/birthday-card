@@ -3,6 +3,26 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'StardewFont';
+    src: url('../assets/fonts/Stardew_Valley.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.stardew-btn {
+    border-color: rgb(239, 150, 61);
+    border-width: 5px;
+    background-color: rgb(246, 198, 122);
+    font-family: 'StardewFont';
+    font-size: 2.3rem;
+}
+
+.stardew-btn:hover {
+    cursor: url("../assets/stardew-cursor.cur"), auto;
+}
+
 #index-body {
     background-image: url("../assets/stardew-valley-background.png");
     background-size: cover;
