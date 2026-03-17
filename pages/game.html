@@ -15,6 +15,7 @@
             // Loading audio in saloon upon page load
             const saloonAudio = new Audio("../assets/ConcernedApe - Stardew Valley OST - 17 The Stardrop Saloon.mp3");
             window.addEventListener("load", () => {
+                saloonAudio.loop = true;
                 saloonAudio.play();
             })
 

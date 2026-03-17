@@ -1,0 +1,69 @@
+{
+    "people": [
+        {
+            "id": 0,
+            "name": "Mayor Lewis",
+            "conversation": "Happy Birthday Lindsay! Glad to have you in our small town. You have been such a bright spot for us over these many years."
+        },
+        {
+            "id": 1,
+            "name": "Aaron",
+            "conversation": "Happy Birthday Lindsay! I love you very much and am excited to celebrate your birthday with you in the Stardrop Saloon! How cool is this?"
+        },
+        {
+            "id": 2,
+            "name": "Emily",
+            "conversation": "Oh! It's your birthday! So that's why the saloon is extra crowded tonight."
+        },
+        {
+            "id": 3,
+            "name": "Gus",
+            "conversation": "Well there's the birthday girl! Here is a cider on the house. Tell Mayor Lewis thanks for hosting your party here this year."
+        },
+        {
+            "id": 4,
+            "name": "Elliot",
+            "conversation": "Happy Birthday! I have some cool shells from the beach that I thought you'd like, since you enjoy combing the beach."
+        },
+        {
+            "id": 5,
+            "name": "Sebastian",
+            "conversation": "Happy Birthday Lindsay! Ssshhh I snuck the mayor's shorts out of Marnie's house for your present!"
+        },
+        {
+            "id": 6,
+            "name": "Marnie",
+            "conversation": "Happy Birthday! I heard a rustling sound earlier that sounded like it came from my room...do you know anything about that?"
+        },
+        {
+            "id": 7,
+            "name": "Willy",
+            "conversation": "Ahoy lass, it's yer birthday again. May we have another grand year of fishing together. Just don't feed any to your husband."
+        },
+        {
+            "id": 8,
+            "name": "Shane",
+            "conversation": "I'm not much of a talker usually, but happy birthday. Cheers to another great year. Thanks for always being there for me."
+        },
+        {
+            "id": 9,
+            "name": "Pam",
+            "conversation": "Well I'll be darned, it's your birthday! Happy birthday kid."
+        },
+        {
+            "id": 10,
+            "name": "Demetrius",
+            "conversation": "Happy Birthday Lindsay. Thanks for being a great friend to Maru and Sebastian."
+        },
+        {
+            "id": 11,
+            "name": "Robin",
+            "conversation": "Happy Birthday Lindsay! Your house looks really great these days."
+        },
+        {
+            "id": 12,
+            "name": "Pierre",
+            "conversation": "Happy Birthday to my most loyal customer! Maybe I'll slip you a 10% discount on your next purchase."
+        }
+    ]
+}
