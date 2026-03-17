@@ -24,14 +24,23 @@
     cursor: url("../assets/stardew-cursor.cur"), auto;
 }
 
-#index-body {
-    background-image: url("../assets/stardew-valley-background.png");
+#index-body, #tavern-body {
+    position: relative;        /* ← required: anchors absolute children (character, hotspots) */
+    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     cursor: url("../assets/stardew-cursor.cur"), auto;
+}
+
+#index-body {
+    background-image: url("../assets/stardew-valley-background.png");
+}
+
+#tavern-body {
+    background-image: url("../assets/stardrop-salloon-background.png");
 }
 
 #index-main {
@@ -51,4 +60,31 @@
 
 #index-play-btn {
     margin-top: 20px;
+}
+
+#lindsay-sprite {
+    position: absolute;
+    bottom: 0;                 /* ← start at the bottom */
+    left: 47%;
+    transform: translateX(-50%);  /* ← true center horizontally */
+    
+    width: 60px;               /* ← adjust to your sprite's size */
+    height: 120px;
+    
+    image-rendering: pixelated; /* ← keeps pixel art crisp, remove if not pixel art */
+    transition: none;           /* ← no CSS transitions, JS handles movement */
+    z-index: 10;
+}
+
+#aaron-sprite {
+    position: absolute;                 
+    left: 80%;
+    transform: translate(0%, 300%);  /* ← positioning myself near the fireplace */
+    
+    width: 60px;               /* ← adjust to your sprite's size */
+    height: 120px;
+    
+    image-rendering: pixelated; /* ← keeps pixel art crisp, remove if not pixel art */
+    transition: none;           /* ← no CSS transitions, JS handles movement */
+    z-index: 10;
 }

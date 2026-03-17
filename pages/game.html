@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Stardew Birthday</title>
+</head>
+<body id="tavern-body">
+    <img id="lindsay-sprite" src="../assets/lindsay-sprite.png" />
+    <img id="aaron-sprite" src="../assets/aaron-sprite.png" />
+    <script>
+        // Loading audio in saloon upon page load
+        const saloonAudio = new Audio("../assets/ConcernedApe - Stardew Valley OST - 17 The Stardrop Saloon.mp3");
+        window.addEventListener("load", () => {
+            saloonAudio.play();
+        })
+    </script>
+</body>
+</html>
