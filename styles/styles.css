@@ -209,8 +209,8 @@
 }
 
 .dialog-portrait {
-    width: 155px;
-    height: 155px;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     image-rendering: pixelated;
     border: 8px solid rgb(203, 117, 31);
@@ -227,16 +227,7 @@
     letter-spacing: 1px;
     background-color: rgb(255, 187, 78);
     border: 5px solid rgb(89, 31, 19);
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 2px 5px;
-}
-
-.dialog-continue {
-    position: absolute;
-    bottom: 8px;
-    right: 12px;
-    font-size: 10px;
-    color: rgb(89, 31, 19);
-    animation: blink 1s step-end infinite;
 }

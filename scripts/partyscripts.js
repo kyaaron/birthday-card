@@ -98,4 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeDialog();
         }
     });
+
+    // Click to close box
+    dialogBox.addEventListener('click', closeDialog);
 });
