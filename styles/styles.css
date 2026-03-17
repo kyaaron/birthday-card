@@ -89,7 +89,7 @@
     z-index: 10;
 }
 
-/* HOTSPOT STYLES */
+/* ------ HOTSPOT STYLES ------ */
 .hotspot {
     position: absolute;
     width: 64px;          /* match your NPC's size */
@@ -98,11 +98,62 @@
     z-index: 20;
 
     /* Remove this border once you've confirmed placement */
-    border: 2px dashed red;
+    /*border: 2px dashed red;*/
+}
+.hotspot[data-person="Mayor Lewis"] { 
+    top: 550px;
+    left: 360px;
+}
+.hotspot[data-person="Aaron"] {
+    top: 380px;
+    left: 1180px;
+}
+.hotspot[data-person="Emily"] {
+    top: 270px;
+    left: 780px;
+}
+.hotspot[data-person="Gus"] { 
+    top: 280px;
+    left: 420px;
+}
+.hotspot[data-person="Elliot"] { 
+    top: 370px;
+    left: 50px;
+}
+.hotspot[data-person="Sebastian"] { 
+    top: 470px;
+    left: 255px;
+}
+.hotspot[data-person="Marnie"] { 
+    top: 550px;
+    left: 285px;
+}
+.hotspot[data-person="Willy"] { 
+    top: 545px;
+    left: 835px;
+}
+.hotspot[data-person="Shane"] { 
+    top: 260px;
+    left: 1075px;
+}
+.hotspot[data-person="Pam"] { 
+    top: 330px;
+    left: 230px;
+}
+.hotspot[data-person="Demetrius"] { 
+    top: 545px;
+    left: 1215px;
+}
+.hotspot[data-person="Robin"] { 
+    top: 555px;
+    left: 1143px;
+}
+.hotspot[data-person="Pierre"] { 
+    top: 440px;
+    left: 770px;
 }
 
-/* Dialog box */
-/* --- Dialog Box --- */
+/* ------ DIALOG BOX ------ */
 .dialog-box {
     position: absolute;
     bottom: 24px;
