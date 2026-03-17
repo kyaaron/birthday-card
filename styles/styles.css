@@ -160,13 +160,13 @@
     left: 50%;
     transform: translateX(-50%);
 
-    display: none;             /* hidden by default */
-    align-items: center;
-    gap: 16px;
+    display: none;
+    align-items: stretch;      /* ← let columns fill full height */
+    gap: 0;                    /* ← remove gap, border handles separation */
 
     width: 80%;
-    min-height: 100px;
-    padding: 16px 20px;
+    min-height: 140px;
+    padding: 12px;
 
     background: rgb(246, 198, 122);
     border: 9px solid rgb(203, 117, 31);
@@ -174,7 +174,6 @@
     box-shadow: 0 0 0 2px #5c3d1e, 4px 4px 0px #000;
 
     z-index: 100;
-    font-family: 'Press Start 2P', monospace; /* pixel font */
     color: rgb(89, 31, 19);
 }
 
@@ -182,44 +181,55 @@
     display: flex;
 }
 
+/* Left side — dialog text fills remaining space */
+.dialog-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 16px 8px 8px;
+    border-right: 5px solid rgb(203, 117, 31); /* ← divider line between text and portrait */
+}
+
+.dialog-text {
+    font-size: 36px;
+    font-family: 'StardewFont';
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Right side — portrait on top, name on bottom */
 .dialog-portrait-wrapper {
     flex-shrink: 0;
-    width: 150px;
-    height: 150px;
-    border: 5px solid rgb(203, 117, 31);
-    border-radius: 4px;
-    overflow: hidden;
-    background: #2a1a0e;
+    width: 245px;
+    display: flex;
+    flex-direction: column;    /* ← stack image and name vertically */
+    align-items: center;
+    gap: 8px;
+    padding: 8px 8px 4px 16px;
 }
 
 .dialog-portrait {
-    width: 100%;
-    height: 100%;
+    width: 155px;
+    height: 155px;
     object-fit: cover;
     image-rendering: pixelated;
+    border: 8px solid rgb(203, 117, 31);
+    border-radius: 4px;
+    background-color: rgb(236, 172, 120);
 }
 
-.dialog-content {
-    flex: 1;
-}
-
+/* Name tag sits below the portrait */
 .dialog-name {
     font-size: 36px;
     font-family: 'StardewFont';
     color: rgb(89, 31, 19);
-    margin: 0 0 10px 0;
+    margin: 0;
     letter-spacing: 1px;
     background-color: rgb(255, 187, 78);
     border: 5px solid rgb(89, 31, 19);
-    width: 30%;
-    padding-left: 5px;
-}
-
-.dialog-text {
-    font-size: 30px;
-    font-family: 'StardewFont';
-    line-height: 1.8;
-    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2px 5px;
 }
 
 .dialog-continue {
