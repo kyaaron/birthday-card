@@ -8,7 +8,8 @@
         {
             "id": 1,
             "name": "Aaron",
-            "conversation": "Happy Birthday Lindsay! I love you very much and am excited to celebrate your birthday with you in the Stardrop Saloon! How cool is this?"
+            "conversation": "Happy Birthday Lindsay! I love you very much and am excited to celebrate your birthday with you in the Stardrop Saloon! How cool is this?",
+            "img": "/assets/avatars/aaron-avatar.png"
         },
         {
             "id": 2,

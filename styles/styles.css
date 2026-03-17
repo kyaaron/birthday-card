@@ -88,3 +88,94 @@
     transition: none;           /* ← no CSS transitions, JS handles movement */
     z-index: 10;
 }
+
+/* HOTSPOT STYLES */
+.hotspot {
+    position: absolute;
+    width: 64px;          /* match your NPC's size */
+    height: 64px;
+    cursor: url("../assets/stardew-cursor.cur"), pointer;
+    z-index: 20;
+
+    /* Remove this border once you've confirmed placement */
+    border: 2px dashed red;
+}
+
+/* Dialog box */
+/* --- Dialog Box --- */
+.dialog-box {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;             /* hidden by default */
+    align-items: center;
+    gap: 16px;
+
+    width: 80%;
+    min-height: 100px;
+    padding: 16px 20px;
+
+    background: rgb(246, 198, 122);
+    border: 9px solid rgb(203, 117, 31);
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px #5c3d1e, 4px 4px 0px #000;
+
+    z-index: 100;
+    font-family: 'Press Start 2P', monospace; /* pixel font */
+    color: rgb(89, 31, 19);
+}
+
+.dialog-box.visible {
+    display: flex;
+}
+
+.dialog-portrait-wrapper {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(203, 117, 31);
+    border-radius: 4px;
+    overflow: hidden;
+    background: #2a1a0e;
+}
+
+.dialog-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.dialog-content {
+    flex: 1;
+}
+
+.dialog-name {
+    font-size: 36px;
+    font-family: 'StardewFont';
+    color: rgb(89, 31, 19);
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    background-color: rgb(255, 187, 78);
+    border: 5px solid rgb(89, 31, 19);
+    width: 30%;
+    padding-left: 5px;
+}
+
+.dialog-text {
+    font-size: 30px;
+    font-family: 'StardewFont';
+    line-height: 1.8;
+    margin: 0;
+}
+
+.dialog-continue {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 10px;
+    color: rgb(89, 31, 19);
+    animation: blink 1s step-end infinite;
+}
