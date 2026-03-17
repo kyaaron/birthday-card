@@ -1,5 +1,5 @@
 const musicButton = document.querySelector("#index-music-btn");
-const audio = new Audio("../assets/ConcernedApe - Stardew Valley OST - 01 Stardew Valley Overture.mp3")
+const audio = new Audio("../assets/ConcernedApe - Stardew Valley OST - 01 Stardew Valley Overture.mp3");
 
 musicButton.addEventListener("click", () => {
     if (audio.paused) {
