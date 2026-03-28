@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogPortrait = document.getElementById('dialog-portrait');
 
     // Load your JSON file
-    fetch('/birthday-card/conversations.JSON')
+    fetch('birthday-card/conversations.JSON')
         .then(res => res.json())
         .then(data => {
             people = data.people;
